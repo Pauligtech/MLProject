@@ -1,13 +1,5 @@
 import sys
-import logging
-
-# Configure logging to write to a file
-LOG_FILE = 'error_log.log'
-logging.basicConfig(
-    filename=LOG_FILE,
-    format="[%(asctime)s] %(levelname)s - %(message)s",
-    level=logging.ERROR
-)
+from logger import logging
 
 
 def error_message_detail(error,error_detail:sys):
